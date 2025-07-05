@@ -3,13 +3,14 @@ import { ClientCard } from "@/components/ClientCard"
 import { mockClients } from "@/data/mock"
 
 interface ClientPageProps {
-  params: {
+  params: Promise<{
     id: string
-  }
+  }>
 }
 
-export default function ClientPage({ params }: ClientPageProps) {
-  const client = mockClients.find((c) => c.id === params.id)
+export default async function ClientPage({ params }: ClientPageProps) {
+  const resolvedParams = await params
+  const client = mockClients.find((c) => c.id === resolvedParams.id)
 
   if (!client) {
     notFound()
