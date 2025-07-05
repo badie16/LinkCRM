@@ -88,7 +88,7 @@ Une application CRM moderne développée avec Next.js, TypeScript et Tailwind CS
 
 1. **Cloner le repository**
 ```bash
-git clone https://github.com/badie16/MiniCRM.git
+git clone https://github.com/badie16/LinkCRM.git
 cd LinkCRM
 ```
 
