@@ -11,7 +11,7 @@ export const mockClients: Client[] = [
     address: "12 Rue de Rivoli, 75001 Paris",
     notes: "Intéressée par une démo de notre solution CRM.",
     status: "active",
-    createdAt: "2024-06-01T10:00:00Z",
+    createdAt: "2025-06-01T10:00:00Z",
   },
   {
     id: "2",
@@ -47,7 +47,7 @@ export const mockClients: Client[] = [
     address: "20 Boulevard Longchamp, 13001 Marseille",
     notes: "Avocat, souhaite une solution simple de suivi client.",
     status: "active",
-    createdAt: "2024-05-25T16:20:00Z",
+    createdAt: "2025-05-25T16:20:00Z",
   },
   {
     id: "5",
@@ -83,7 +83,7 @@ export const mockClients: Client[] = [
     address: "Rue des Grandes Arcades, 67000 Strasbourg",
     notes: "A besoin d’un suivi des ventes et clients en magasin.",
     status: "inactive",
-    createdAt: "2024-05-18T09:40:00Z",
+    createdAt: "2025-07-1T09:40:00Z",
   },
   {
     id: "8",
@@ -95,7 +95,7 @@ export const mockClients: Client[] = [
     address: "Avenue des Champs-Élysées, 75008 Paris",
     notes: "Spécialiste en finance, exigeant sur la sécurité.",
     status: "active",
-    createdAt: "2024-05-15T13:20:00Z",
+    createdAt: "2025-07-1T13:20:00Z",
   },
   {
     id: "9",
@@ -107,7 +107,7 @@ export const mockClients: Client[] = [
     address: "Rue Paul Bellamy, 44000 Nantes",
     notes: "Centre de santé partenaire, soucieux de la RGPD.",
     status: "active",
-    createdAt: "2024-05-12T08:00:00Z",
+    createdAt: "2025-07-2T08:00:00Z",
   },
   {
     id: "10",
@@ -119,6 +119,6 @@ export const mockClients: Client[] = [
     address: "Boulevard de la Liberté, 59000 Lille",
     notes: "Directeur pédagogique, veut intégrer le CRM à leur LMS.",
     status: "active",
-    createdAt: "2024-05-10T12:45:00Z",
+    createdAt: "2025-07-2T12:45:00Z",
   },
 ];
