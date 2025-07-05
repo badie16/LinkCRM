@@ -5,7 +5,7 @@ import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
 import { Button } from "@/components/ui/Button"
 import { Building2, LayoutDashboard, Users, UserPlus, LogOut, Menu, X } from "lucide-react"
-
+import Image from "next/image"
 const navigation = [
   {
     name: "Dashboard",
@@ -66,8 +66,8 @@ export function Navbar() {
         <div className="flex flex-col h-full">
           {/* Logo */}
           <div className="flex items-center px-6 py-4 border-b border-gray-200">
-            <Building2 className="w-8 h-8 text-blue-600" />
-            <span className="ml-2 text-xl font-bold text-gray-900">Mini CRM</span>
+            <Image src="/logo.png" className="object-contain my-2"  alt="LinkCRM Logo" width={50} height={50} />
+            <span className="ml-2 text-xl font-bold text-gray-900">LinkCRM</span>
           </div>
 
           {/* Navigation */}

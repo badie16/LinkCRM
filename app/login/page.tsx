@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/Button"
 import { Input } from "@/components/ui/Input"
 import { Card } from "@/components/ui/Card"
-import { Building2 } from "lucide-react"
+import Image from "next/image"
 
 export default function LoginPage() {
   const [email, setEmail] = useState("")
@@ -23,14 +23,11 @@ export default function LoginPage() {
       <Card className="w-full max-w-md p-8">
         <div className="text-center mb-8">
           <div className="flex justify-center mb-4">
-            <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-              <Building2 className="w-6 h-6 text-white" />
-            </div>
+            <Image src="/logo.png" className="object-contain my-2" alt="LinkCRM  Logo" width={200} height={200} />          
           </div>
-          <h1 className="text-2xl font-bold text-gray-900">Mini CRM</h1>
+          <h1 className="text-2xl font-bold text-gray-900">LinkCRM</h1>
           <p className="text-gray-600 mt-2">Connectez-vous à votre espace client</p>
         </div>
-
         <form onSubmit={handleLogin} className="space-y-6">
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">

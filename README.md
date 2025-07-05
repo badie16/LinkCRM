@@ -1,4 +1,4 @@
-# Mini CRM - Application de Gestion Client
+# LinkCRM - Application de Gestion Client
 
 Une application CRM moderne développée avec Next.js, TypeScript et Tailwind CSS pour la gestion des clients d'une équipe commerciale.
 
@@ -89,7 +89,7 @@ Une application CRM moderne développée avec Next.js, TypeScript et Tailwind CS
 1. **Cloner le repository**
 ```bash
 git clone https://github.com/badie16/MiniCRM.git
-cd MiniCRM
+cd LinkCRM
 ```
 
 2. **Installer les dépendances**
