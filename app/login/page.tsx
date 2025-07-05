@@ -18,7 +18,6 @@ export default function LoginPage() {
 
   const handleLoadingComplete = () => {
     setIsLoading(false)
-    // Petite animation d'entrée pour la page de login
     setTimeout(() => {
       setShowLogin(true)
     }, 100)
@@ -36,15 +35,20 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
       <Card
-        className={`w-full max-w-md p-8 transform transition-all duration-700 ${
-          showLogin ? "scale-100 opacity-100 translate-y-0" : "scale-95 opacity-0 translate-y-4"
-        }`}
+        className={`w-full max-w-md p-8 transform transition-all duration-700 ${showLogin ? "scale-100 opacity-100 translate-y-0" : "scale-95 opacity-0 translate-y-4"
+          }`}
       >
         <div className="text-center mb-8">
-          <div className="select-none pointer-events-none flex justify-center mb-4">
-            <Image src="/logo.png" className="object-contain my-2" alt="LinkCRM  Logo" width={200} height={200} />          
+          <div className="w-[170px] h-[90px] relative mb-4 select-none pointer-events-none m-auto">
+            <Image
+              src="/logo.png"
+              alt="LinkCRM Logo"
+              fill
+              className="object-contain"
+              priority
+            />
           </div>
-          {/* <h1 className="text-2xl font-bold text-gray-900">LinkCRM</h1> */}
+
           <p className="text-gray-600 mt-2">Connectez-vous à votre espace client</p>
         </div>
         <form onSubmit={handleLogin} className="space-y-6">
