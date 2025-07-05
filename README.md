@@ -2,7 +2,7 @@
 
 Une application CRM moderne développée avec Next.js, TypeScript et Tailwind CSS pour la gestion des clients d'une équipe commerciale.
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```
 ├── app/
@@ -32,9 +32,9 @@ Une application CRM moderne développée avec Next.js, TypeScript et Tailwind CS
 └── README.md
 ```
 
-## 🚀 Fonctionnalités
+## Fonctionnalités
 
-### ✅ Fonctionnalités principales
+### Fonctionnalités principales
 
 1. **Page de connexion (Mock)**
    - Interface responsive sans validation backend
@@ -66,7 +66,7 @@ Une application CRM moderne développée avec Next.js, TypeScript et Tailwind CS
    - Messages d'erreur en temps réel
    - Message de succès avec redirection
 
-### 🎯 Fonctionnalités bonus
+### Fonctionnalités bonus
 
 - **TypeScript** complet
 - **Interface responsive** mobile/desktop
@@ -75,7 +75,7 @@ Une application CRM moderne développée avec Next.js, TypeScript et Tailwind CS
 - **Validation avancée** des formulaires
 - **Design moderne** avec shadcn/ui
 
-## 🛠 Stack technique
+## Stack technique
 
 - **Framework** : Next.js 14 (App Router)
 - **Language** : TypeScript
@@ -84,12 +84,12 @@ Une application CRM moderne développée avec Next.js, TypeScript et Tailwind CS
 - **Icons** : Lucide React
 - **Données** : Mock data statique
 
-## 🚦 Installation et lancement
+## Installation et lancement
 
 1. **Cloner le repository**
 ```bash
-git clone [url-du-repo]
-cd mini-crm
+git clone https://github.com/badie16/MiniCRM.git
+cd MiniCRM
 ```
 
 2. **Installer les dépendances**
@@ -105,7 +105,7 @@ npm run dev
 4. **Ouvrir l'application**
 Rendez-vous sur [http://localhost:3000](http://localhost:3000)
 
-## 📱 Utilisation
+## Utilisation
 
 ### Connexion
 - Page de connexion accessible à la racine
@@ -124,41 +124,7 @@ Rendez-vous sur [http://localhost:3000](http://localhost:3000)
 - **Détails** : Clic sur une ligne pour voir la fiche complète
 - **Ajout** : Formulaire avec validation des champs obligatoires
 
-## 🎨 Composants détaillés
-
-### Navbar.tsx
-- Navigation principale avec logo
-- Menu responsive mobile/desktop
-- États actifs des liens
-- Bouton de déconnexion
-
-### ClientTable.tsx
-- Table responsive avec données mockées
-- Recherche en temps réel
-- Tri par nom (ascendant/descendant)
-- Navigation vers les fiches détaillées
-- Badges de statut
-
-### ClientForm.tsx
-- Formulaire avec React Hook Form
-- Validation en temps réel
-- Champs obligatoires et optionnels
-- Messages d'erreur personnalisés
-- Redirection après succès
-
-### ClientCard.tsx
-- Fiche détaillée du client
-- Informations complètes
-- Historique des activités
-- Actions rapides
-- Statistiques
-
-### Layout.tsx
-- Wrapper principal avec sidebar
-- Gestion responsive
-- Structure commune aux pages
-
-## 🔧 Données et validation
+## Données et validation
 
 ### data/mock.ts
 - 10 clients français mockés
@@ -177,7 +143,7 @@ Rendez-vous sur [http://localhost:3000](http://localhost:3000)
 - Type ClientFormData pour les formulaires
 - Interface Activity pour l'historique
 
-## 📋 Critères d'évaluation couverts
+## Critères d'évaluation couverts
 
 - ✅ **Maîtrise Next.js** - App Router, routing dynamique, layouts
 - ✅ **Composants réutilisables** - Architecture modulaire claire
@@ -189,18 +155,7 @@ Rendez-vous sur [http://localhost:3000](http://localhost:3000)
 - ✅ **React Hook Form** - Gestion avancée des formulaires
 - ✅ **Responsive mobile** - Adaptation complète mobile/desktop
 
-## 🎯 Points forts de l'implémentation
-
-1. **Architecture claire** selon vos spécifications exactes
-2. **Composants modulaires** et réutilisables
-3. **Validation robuste** avec messages d'erreur français
-4. **Interface responsive** parfaite sur tous écrans
-5. **Données réalistes** pour une démonstration convaincante
-6. **Code TypeScript** propre et bien typé
-7. **Navigation intuitive** avec états actifs
-8. **Performance optimisée** avec Next.js App Router
-
-## 🚀 Améliorations possibles
+## Améliorations possibles
 
 - Tests unitaires (Jest, Testing Library)
 - Base de données réelle (Supabase, Prisma)
@@ -211,12 +166,3 @@ Rendez-vous sur [http://localhost:3000](http://localhost:3000)
 - Mode sombre
 - Notifications temps réel
 
-## 📞 Contact
-
-Application développée selon les spécifications exactes du challenge.
-Toutes les fonctionnalités demandées sont implémentées et fonctionnelles.
-
----
-
-*Développé avec ❤️ en Next.js et TypeScript*
-```
