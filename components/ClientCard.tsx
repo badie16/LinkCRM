@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/Button"
 import { Card } from "@/components/ui/Card"
 import { Badge } from "@/components/ui/Badge"
+import { ArrowLeft, Mail, Phone, Building, Calendar, Activity } from "lucide-react"
 import type { Client } from "@/types/client"
 
 interface ClientCardProps {
@@ -35,9 +36,7 @@ export function ClientCard({ client }: ClientCardProps) {
       <div className="mb-6">
         <Link href="/dashboard/clients">
           <Button variant="ghost" className="mb-4">
-            <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
+            <ArrowLeft className="w-4 h-4 mr-2" />
             Retour à la liste
           </Button>
         </Link>
@@ -62,14 +61,7 @@ export function ClientCard({ client }: ClientCardProps) {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex items-center space-x-3">
-                <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
+                <Mail className="w-5 h-5 text-gray-400" />
                 <div>
                   <p className="text-sm text-gray-500">Email</p>
                   <p className="font-medium text-gray-900">{client.email}</p>
@@ -77,14 +69,7 @@ export function ClientCard({ client }: ClientCardProps) {
               </div>
 
               <div className="flex items-center space-x-3">
-                <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
+                <Phone className="w-5 h-5 text-gray-400" />
                 <div>
                   <p className="text-sm text-gray-500">Téléphone</p>
                   <p className="font-medium text-gray-900">{client.phone}</p>
@@ -92,14 +77,7 @@ export function ClientCard({ client }: ClientCardProps) {
               </div>
 
               <div className="flex items-center space-x-3">
-                <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                  />
-                </svg>
+                <Building className="w-5 h-5 text-gray-400" />
                 <div>
                   <p className="text-sm text-gray-500">Entreprise</p>
                   <p className="font-medium text-gray-900">{client.company}</p>
@@ -107,14 +85,7 @@ export function ClientCard({ client }: ClientCardProps) {
               </div>
 
               <div className="flex items-center space-x-3">
-                <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  />
-                </svg>
+                <Calendar className="w-5 h-5 text-gray-400" />
                 <div>
                   <p className="text-sm text-gray-500">Date de création</p>
                   <p className="font-medium text-gray-900">{new Date(client.createdAt).toLocaleDateString("fr-FR")}</p>
@@ -139,9 +110,7 @@ export function ClientCard({ client }: ClientCardProps) {
 
           <Card className="p-6">
             <div className="flex items-center mb-4">
-              <svg className="w-5 h-5 text-gray-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
+              <Activity className="w-5 h-5 text-gray-400 mr-2" />
               <h3 className="text-lg font-semibold text-gray-900">Historique des activités</h3>
             </div>
             <p className="text-sm text-gray-600 mb-6">Toutes les interactions avec ce client</p>
@@ -183,36 +152,15 @@ export function ClientCard({ client }: ClientCardProps) {
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Actions rapides</h3>
             <div className="space-y-3">
               <Button variant="outline" className="w-full justify-start bg-transparent">
-                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
+                <Mail className="w-4 h-4 mr-2" />
                 Envoyer un email
               </Button>
               <Button variant="outline" className="w-full justify-start bg-transparent">
-                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
+                <Phone className="w-4 h-4 mr-2" />
                 Appeler
               </Button>
               <Button variant="outline" className="w-full justify-start bg-transparent">
-                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  />
-                </svg>
+                <Calendar className="w-4 h-4 mr-2" />
                 Planifier RDV
               </Button>
             </div>

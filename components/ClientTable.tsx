@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/Button"
 import { Input } from "@/components/ui/Input"
 import { Card } from "@/components/ui/Card"
 import { Badge } from "@/components/ui/Badge"
+import { Search, ArrowUpDown } from "lucide-react"
 import { mockClients } from "@/data/mock"
 
 export function ClientTable() {
@@ -44,19 +45,7 @@ export function ClientTable() {
         </h3>
         <div className="flex items-center space-x-2">
           <div className="relative flex-1 max-w-sm">
-            <svg
-              className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
             <Input
               placeholder="Rechercher un client..."
               value={searchTerm}
@@ -78,14 +67,7 @@ export function ClientTable() {
                   className="font-semibold text-gray-900 hover:text-gray-700"
                 >
                   Nom
-                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"
-                    />
-                  </svg>
+                  <ArrowUpDown className="ml-2 w-4 h-4" />
                 </Button>
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Email</th>
