@@ -1,7 +1,23 @@
 # LinkCRM - Application de Gestion Client
 
 Une application CRM moderne développée avec Next.js, TypeScript et Tailwind CSS pour la gestion des clients d'une équipe commerciale.
+## Aperçu visuel
+### Logo 
+<p align="center"  style="background-color: #fff; padding: 20px;">
+  <img src="./public/logo.png" height="150" alt="Logo LinkCRM" />
+</p>
 
+### Captures d'écran
+**Page de connexion :**
+![Connexion](./public/screenshots/login.png)
+**Dashboard principal :**
+![Dashboard](./public/screenshots/dashboard.png)
+**Liste des clients :**
+![Clients](./public/screenshots/clients-list.png)
+**Détails d’un client :**
+![Détails](./public/screenshots/client-details.png)
+**Ajouter un client :**
+![Add Client](./public/screenshots/add-client.png)
 ## Structure du projet
 
 ```
