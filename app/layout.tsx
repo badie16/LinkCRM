@@ -12,3 +12,9 @@ export default function RootLayout({
     </html>
   )
 }
+
+export const metadata: Metadata = {
+  icons: {
+    icon: '/icon.png',
+  },
+}
