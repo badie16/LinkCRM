@@ -84,6 +84,13 @@ export function LoadingScreen({ onLoadingComplete }: LoadingScreenProps) {
           {/* Pourcentage */}
           <div className="text-white/60 text-xs mt-2 font-mono">{progress}%</div>
         </div>
+
+        {/* Animation de points */}
+        <div className="flex justify-center space-x-1 mt-8">
+          <div className="w-2 h-2 bg-white/60 rounded-full animate-bounce"></div>
+          <div className="w-2 h-2 bg-white/60 rounded-full animate-bounce animate-delay-100"></div>
+          <div className="w-2 h-2 bg-white/60 rounded-full animate-bounce animate-delay-200"></div>
+        </div>
       </div>
 
       {/* Effet de brillance */}
