@@ -39,16 +39,7 @@ export function LoadingScreen({ onLoadingComplete }: LoadingScreenProps) {
   }, [onLoadingComplete])
 
   return (
-    <div className="fixed inset-0 bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 flex items-center justify-center z-50">
-      {/* Particules d'arrière-plan */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white/20 rounded-full animate-pulse"></div>
-        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-white/30 rounded-full animate-ping"></div>
-        <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-white/25 rounded-full animate-pulse delay-300"></div>
-        <div className="absolute top-1/2 right-1/4 w-1 h-1 bg-white/20 rounded-full animate-ping delay-500"></div>
-        <div className="absolute bottom-1/3 right-1/2 w-2 h-2 bg-white/15 rounded-full animate-pulse delay-700"></div>
-      </div>
-
+    <div className="fixed inset-0 bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 flex items-center justify-center z-50">    
       <div className="text-center">
         {/* Logo avec animation */}
         <div
@@ -92,13 +83,6 @@ export function LoadingScreen({ onLoadingComplete }: LoadingScreenProps) {
 
           {/* Pourcentage */}
           <div className="text-white/60 text-xs mt-2 font-mono">{progress}%</div>
-        </div>
-
-        {/* Animation de points */}
-        <div className="flex justify-center space-x-1 mt-8">
-          <div className="w-2 h-2 bg-white/60 rounded-full animate-bounce"></div>
-          <div className="w-2 h-2 bg-white/60 rounded-full animate-bounce delay-100"></div>
-          <div className="w-2 h-2 bg-white/60 rounded-full animate-bounce delay-200"></div>
         </div>
       </div>
 
